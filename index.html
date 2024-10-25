@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de descripción a eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>formulario de descripción a eventos</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>datos personales</legend>
+            <label for="nombre">nombre completo</label>
+            <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="50">
+            <br><br>
+            <label for="email">correo electronico</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="password">contraseña</label>
+            <input type="password" id="password" name="password" required minlength="6" >
+            <br><br>
+            <label for="date">fecha nacimiento</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label>seleccione genero</label> <br><br>
+            <label for="genero_masculino">masculino</label>
+            <input type="radio" id="genero_masculino" name="genero" value="masculino" required>
+            <label for="genero_femenino">femenino</label>
+            <input type="radio" id="genero_femenino" name="genero" value="femenino" required>
+            <label for="genero_otro">otro</label>
+            <input type="radio" id="genero_otro" name="genero" value="otro" required>
+            <br><br>
+    </fieldset>
+    <fieldset>
+        <legend> detalles del evento</legend>
+        <label for="evento"> nombre del evento:</label>
+        <input type="text" id="evento" name="evento" required>
+        <br><br>
+        <label for="comentarios"> comentarios:</label>
+        <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="escribe aqui tus comentarios..."></textarea>
+        <br><br>
+        <label for="hora">hora del evento:</label>
+        <input type="time" id="hora" name="hora" required>
+        <br><br>
+        <label for="lugar">lugar del evento:</label>
+        <select name="lugar" id="lugar" required>
+            <option value="" selected>seleccione un lugar</option>
+            <option value="auditorio">auditorio principal</option>
+            <option value="sala_reuniones">sala de reuniones</option>
+            <option value="aula_virtual">aula virtual</option>
+            <option value="jardin">Jardin exterior</option>
+        </select>
+        <br><br>
+        <label >servicios adicionales: </label>
+        <input type="checkbox" name="servicios" id="RSA1" value="si">
+        <label for="RSA1" class="inline-label">si</label>
+        <input type="checkbox" name="servicios" id="RSA2" value="no">
+        <label for="RSA2" class="inline-label">no</label>
+        <br><br>
+    </fieldset>
+    <button type="submit">enviar inscripción</button>
+        <br><br>
+    </form>
+
+</body>
+</html>
